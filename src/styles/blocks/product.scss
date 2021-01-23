@@ -26,6 +26,13 @@
     width: 160px;
     height: 134px;
     margin: 30px 19px 0;
+    padding: 10px 0;
+    transition: transform 1s;
+  }
+
+  &__img:hover {
+    transform: scale(1.2, 1.2);
+    border: 3px solid #f3f3f3;
   }
 
   &__name {
