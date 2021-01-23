@@ -32,7 +32,6 @@
   &__img:hover {
     transform: scale(1.2, 1.2);
     border: 3px solid #f3f3f3;
-    padding: 8px 0;
   }
 
   &__name {
@@ -102,7 +101,7 @@
   &__button:hover {
     height: 39px;
     width: 169px;
-    
+
     border: 1px solid $theme-color;
     background-color: $standart-color;
     color: $theme-color;
