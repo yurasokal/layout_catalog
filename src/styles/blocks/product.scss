@@ -89,16 +89,22 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: $standart-color;
     padding: 12px 57px 11px 58px;
-    background: $theme-color;
     border-radius: 5px;
     margin: 22px 15px;
+
+    color: $standart-color;
+    background: $theme-color;
+
+    transition: background-color 1s, color 1s;
   }
 
   &__button:hover {
-    color: $theme-color;
-    background-color: $standart-color;
+    height: 39px;
+    width: 169px;
+    
     border: 1px solid $theme-color;
+    background-color: $standart-color;
+    color: $theme-color;
   }
 }
