@@ -34,8 +34,8 @@
 
   &__img:hover {
     border: 3px solid #f3f3f3;
-
-    transform: scale(1.2, 1.2);
+    padding: 10px 8px;
+    transform: scale(1.25) translate(0, -12px);
   }
 
   &__name {
