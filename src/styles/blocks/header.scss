@@ -2,12 +2,17 @@
 @import "../mixin";
 
 .header {
-  @include flex-space-between;
+  display: grid;
+  align-items: center;
+  box-sizing: border-box;
+  justify-items: end;
+
+  grid-template-rows: 60px;
+  grid-template-columns: 40px 1fr;
+  padding: 0 50px;
+  margin-bottom: 50px;
 
   font-size: $normal-font-size;
-  height: 60px;
-  padding: 0 50px;
+  
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  align-items: center;
-  margin-bottom: 50px;
 }

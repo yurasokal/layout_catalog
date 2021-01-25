@@ -25,6 +25,7 @@
     line-height: 14px;
     text-transform: uppercase;
     font-weight: $medium-font;
+    transition: color 1s;
   }
 
   &__link:hover {
