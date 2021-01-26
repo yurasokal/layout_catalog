@@ -2,8 +2,8 @@
 @import "../mixin";
 
 .product {
-  display: grid;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   padding: 0 14px;
   width: 200px;
 
@@ -43,10 +43,9 @@
   }
 
   &__rating {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0 21px;
+    @include flex-space-between;
 
+    margin: 15px 0 21px;
     align-items: center;
   }
 
@@ -55,16 +54,14 @@
   &__text {
     margin: 0;
 
-    // justify-content: space-between;
     font-size: $small-font-size;
     font-weight: $regular-font;
     line-height: $normal-line-height;
   }
 
   &__price {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-between;
+    @include flex-space-between;
+
     align-items: baseline;
   }
 
@@ -91,8 +88,8 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-
     color: $standart-color;
+
     background: $theme-color;
     border-radius: 5px;
     border: 1px solid $theme-color;
@@ -102,6 +99,7 @@
 
   &__button:hover {
     color: $theme-color;
+
     background-color: $standart-color;
   }
 }
