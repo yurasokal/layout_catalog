@@ -1,10 +1,12 @@
 .stars {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 4px;
 
   &__star {
     width: 15px;
     height: 15px;
-    margin-right: 4px;
+    // margin-right: 4px;
 
     background: url("../images/star.svg") no-repeat center;
   }
