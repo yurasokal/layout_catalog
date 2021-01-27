@@ -4,8 +4,7 @@
 .main {
   &__container {
     display: grid;
-    justify-content: space-between;
-    justify-items: center;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, 200px);
     max-width: 1024px;
     padding: 0 40px;
