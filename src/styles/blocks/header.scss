@@ -4,12 +4,14 @@
 .header {
   @include flex-space-between;
 
-  font-size: $normal-font-size;
   height: 60px;
   padding: 0 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   align-items: center;
 
+  font-size: $normal-font-size;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
   &__container {
     margin-bottom: 50px;
   }

@@ -15,18 +15,28 @@
     margin-bottom: 50px;
   }
 
+  &__picture {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+  }
+
   &__img {
+    box-sizing: content-box;
+    display: block;
     width: 160px;
     height: 134px;
-    margin: 30px auto;
+    margin: 0 auto 27px;
 
+    border: 3px solid transparent;
+    border-radius: 5px 5px 0 0;
+    padding-top: 13px;
     transition: transform 1s;
   }
 
   &__img:hover {
-    border: 3px solid #f3f3f3;
-    padding: 10px 8px;
-    transform: scale(1.25) translate(0, -12px);
+    border-color: #f3f3f3;
+    transform: scale(1.2);
   }
 
   &__name {
@@ -94,7 +104,7 @@
     border-radius: 5px;
     border: 1px solid $theme-color;
 
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.5s;
   }
 
   &__button:hover {
